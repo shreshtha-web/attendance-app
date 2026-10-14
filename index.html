@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal, browser-based student attendance tracker.">
+  <title>SCRS Attendance | Personal Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <div><strong>SCRS</strong><span>Attendance Desk</span></div>
+      </div>
+      <div class="side-label">WORKSPACE</div>
+      <div class="nav-item active"><span>▦</span> Take attendance</div>
+      <div class="side-note">
+        <span class="live-dot"></span>
+        <div><strong>Personal workspace</strong><small>Your data stays in this browser</small></div>
+      </div>
+      <div class="sidebar-footer">STUDENT TOOLKIT <span>v1.0</span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div><p class="eyebrow">STUDENT COMMITTEE · SCRS</p><h1>Attendance tracker</h1></div>
+        <div class="today-chip"><span class="calendar-icon">▣</span><span id="todayLabel">Today</span></div>
+      </header>
+
+      <section class="intro">
+        <div><h2>Good attendance starts here.</h2><p>Mark each student present or absent, then submit to download a PDF report.</p></div>
+        <div class="session-field"><label for="sessionDate">Attendance date</label><input type="date" id="sessionDate"></div>
+      </section>
+
+      <section class="stats" aria-label="Attendance summary">
+        <article class="stat-card"><div class="stat-top"><span>Total students</span><span class="stat-icon neutral">▤</span></div><strong id="totalCount">0</strong><small>In your roster</small></article>
+        <article class="stat-card"><div class="stat-top"><span>Present</span><span class="stat-icon green">✓</span></div><strong id="presentCount">0</strong><small id="presentPercent">0% of students</small></article>
+        <article class="stat-card"><div class="stat-top"><span>Absent</span><span class="stat-icon red">×</span></div><strong id="absentCount">0</strong><small id="absentPercent">0% of students</small></article>
+        <article class="stat-card"><div class="stat-top"><span>Not marked</span><span class="stat-icon amber">○</span></div><strong id="unmarkedCount">0</strong><small>Still needs a status</small></article>
+      </section>
+
+      <section class="roster-panel">
+        <div class="panel-head">
+          <div><h2>Student roster</h2><p id="rosterSub">Students loaded from your Excel sheet</p></div>
+          <div class="head-actions">
+            <button class="btn btn-light" id="markAllPresent">✓ Mark all present</button>
+            <button class="btn btn-light" id="markAllAbsent">× Mark all absent</button>
+          </div>
+        </div>
+        <div class="toolbar">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search name or roll number…" autocomplete="off"></label>
+          <select id="sectionFilter" aria-label="Filter by section"><option value="all">All sections</option></select>
+          <select id="statusFilter" aria-label="Filter by attendance status"><option value="all">All statuses</option><option value="present">Present</option><option value="absent">Absent</option><option value="unmarked">Not marked</option></select>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th class="num-col">#</th><th>STUDENT</th><th>UNIVERSITY ROLL NO.</th><th>SECTION</th><th>ATTENDANCE STATUS</th></tr></thead>
+            <tbody id="studentRows"></tbody>
+          </table>
+          <div id="emptyState" class="empty-state" hidden>No students match your search.</div>
+        </div>
+        <div class="panel-bottom"><span id="showingCount">Showing 0 students</span><button class="text-button" id="resetButton">Reset statuses</button></div>
+      </section>
+
+      <section class="submit-bar">
+        <div class="submit-copy"><span class="submit-icon">↧</span><div><strong>Ready to submit?</strong><p id="submitHint">Mark every student present or absent to create your report.</p></div></div>
+        <button class="btn btn-primary" id="submitButton">Submit &amp; download PDF <span>↗</span></button>
+      </section>
+      <footer>Built for personal use · Changes are saved locally in this browser</footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="confirmModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-symbol">!</div><h2 id="modalTitle">Attendance is incomplete</h2>
+      <p id="modalMessage">Some students have not been marked.</p>
+      <div class="modal-actions"><button class="btn btn-light" id="goBackButton">Go back</button><button class="btn btn-primary" id="submitAnywayButton">Submit anyway</button></div>
+    </div>
+  </div>
+</body>
+</html>
