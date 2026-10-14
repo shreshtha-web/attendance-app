@@ -1,27 +1,27 @@
 [
   {
     "sno": 1,
-    "rollNo": "1240439426",
-    "name": "Shreshtha Verma",
-    "section": "AI3B"
-  },
-  {
-    "sno": 2,
-    "rollNo": "1240432512",
-    "name": "Virat Rai",
-    "section": "CS3F"
-  },
-  {
-    "sno": 3,
-    "rollNo": "1240439401",
-    "name": "Shafiqurrahman An",
-    "section": "AI3B"
-  },
-  {
-    "sno": 4,
     "rollNo": "1250439002",
     "name": "Anya Massey",
     "section": "AI2B"
+  },
+  {
+    "sno": 2,
+    "rollNo": "1240439047",
+    "name": "Aditya Singh",
+    "section": "AI3D"
+  },
+  {
+    "sno": 3,
+    "rollNo": "1240432222",
+    "name": "Jay Anshul",
+    "section": "CS3C"
+  },
+  {
+    "sno": 4,
+    "rollNo": "1240439216",
+    "name": "Kamakhya Singh Ya",
+    "section": "AI3B"
   },
   {
     "sno": 5,
@@ -37,86 +37,86 @@
   },
   {
     "sno": 7,
-    "rollNo": "1240439308",
-    "name": "Piyush Dubey",
-    "section": "AI3B"
-  },
-  {
-    "sno": 8,
-    "rollNo": "1240439414",
-    "name": "Shiva Kumar Tiwar",
-    "section": "AI3B"
-  },
-  {
-    "sno": 9,
-    "rollNo": "1240439216",
-    "name": "Kamakhya Singh Ya",
-    "section": "AI3B"
-  },
-  {
-    "sno": 10,
     "rollNo": "1240439295",
     "name": "Nitin Gupta",
     "section": "AI3D"
   },
   {
-    "sno": 11,
-    "rollNo": "1240432222",
-    "name": "Jay Anshul",
-    "section": "CS3C"
-  },
-  {
-    "sno": 12,
-    "rollNo": "1240432458",
-    "name": "Sonam Yadav",
-    "section": "CS3C"
-  },
-  {
-    "sno": 13,
-    "rollNo": "1240432466",
-    "name": "Sumit Kumar",
-    "section": "CS3C"
-  },
-  {
-    "sno": 14,
-    "rollNo": "1240432410",
-    "name": "Shivam Gupta",
-    "section": "CS3F"
-  },
-  {
-    "sno": 15,
+    "sno": 8,
     "rollNo": "1240432300",
     "name": "Nitin Verma",
     "section": "CS3F"
   },
   {
-    "sno": 16,
-    "rollNo": "1240432497",
-    "name": "Utsav Sharma",
-    "section": "CS3F"
-  },
-  {
-    "sno": 17,
-    "rollNo": "1250439396",
-    "name": "Shivam Mishra",
-    "section": "AI2E"
-  },
-  {
-    "sno": 18,
-    "rollNo": "1250439358",
-    "name": "Rudransh Kumar Si",
-    "section": "AI2B"
-  },
-  {
-    "sno": 19,
+    "sno": 9,
     "rollNo": "1240439299",
     "name": "Omji Katiyar",
     "section": "AI3D"
   },
   {
+    "sno": 10,
+    "rollNo": "1240439308",
+    "name": "Piyush Dubey",
+    "section": "AI3B"
+  },
+  {
+    "sno": 11,
+    "rollNo": "1250439358",
+    "name": "Rudransh Kumar Si",
+    "section": "AI2B"
+  },
+  {
+    "sno": 12,
+    "rollNo": "1240439401",
+    "name": "Shafiqurrahman An",
+    "section": "AI3B"
+  },
+  {
+    "sno": 13,
+    "rollNo": "1240439426",
+    "name": "Shreshtha Verma",
+    "section": "AI3B"
+  },
+  {
+    "sno": 14,
+    "rollNo": "1240439414",
+    "name": "Shiva Kumar Tiwar",
+    "section": "AI3B"
+  },
+  {
+    "sno": 15,
+    "rollNo": "1240432410",
+    "name": "Shivam Gupta",
+    "section": "CS3F"
+  },
+  {
+    "sno": 16,
+    "rollNo": "1250439396",
+    "name": "Shivam Mishra",
+    "section": "AI2E"
+  },
+  {
+    "sno": 17,
+    "rollNo": "1240432458",
+    "name": "Sonam Yadav",
+    "section": "CS3C"
+  },
+  {
+    "sno": 18,
+    "rollNo": "1240432466",
+    "name": "Sumit Kumar",
+    "section": "CS3C"
+  },
+  {
+    "sno": 19,
+    "rollNo": "1240432497",
+    "name": "Utsav Sharma",
+    "section": "CS3F"
+  },
+  {
     "sno": 20,
-    "rollNo": "1240439047",
-    "name": "Aditya Singh",
-    "section": "AI3D"
+    "rollNo": "1240432512",
+    "name": "Virat Rai",
+    "section": "CS3F"
   }
 ]
